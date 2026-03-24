@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SelfCharm</title>
+  <meta charset="UTF-8">
+</head>
+
+<body style="font-family:sans-serif;text-align:center;margin-top:100px">
+
+<h1>SelfCharm</h1>
+<p>First landing page</p>
+
+</body>
+</html>
