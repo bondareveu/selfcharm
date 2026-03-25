@@ -1,14 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>SelfCharm</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selfcharm</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .page {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #000;
+    }
+
+    /* Two background photos */
+    .bg {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bg-left {
+      left: 0;
+      width: 53.9%;
+    }
+
+    .bg-right {
+      left: 53.9%;
+      width: 46.1%;
+      object-position: top center;
+    }
+
+    /* Softcharm logo — overlaid, spans both panels */
+    .logo {
+      position: absolute;
+      left: 17.2%;
+      top: 10%;
+      width: 73.4%;
+      pointer-events: none;
+    }
+
+    /* Coming soon label */
+    .coming-soon {
+      position: absolute;
+      right: 20%;
+      bottom: 40%;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+  </style>
 </head>
-
-<body style="font-family:sans-serif;text-align:center;margin-top:100px">
-
-<h1>SelfCharm</h1>
-<p>First landing page</p>
-
+<body>
+  <div class="page">
+    <img class="bg bg-left"
+         src="assets/bg-left.png"
+         alt="">
+    <img class="bg bg-right"
+         src="assets/bg-right.png"
+         alt="">
+    <img class="logo"
+         src="assets/logo.png"
+         alt="Selfcharm">
+  </div>
 </body>
 </html>
